@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e69b00;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+  
+.time-box {
+    text-align: center;
+    background-color: #f7f5bc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 80px;
+}
+  
+.time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffc547; /* Tomato color */
+    margin: 0;
+}
+  
+.time-box span {
+    font-size: 1rem;
+    color: #555;
+}
