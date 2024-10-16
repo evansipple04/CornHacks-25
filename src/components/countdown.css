@@ -4,12 +4,13 @@ body {
     height: 100vh;
     background-color: #e69b00;
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
     position: absolute;
     top: 30px;
-    right: 0px;
+    right: 30px;
     text-align: center;
     margin-top: 50px;
 }
