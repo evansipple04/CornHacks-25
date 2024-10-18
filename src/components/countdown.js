@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-<<<<<<< HEAD
-// import "bootstrap/dist/css/bootstrap.css";
-=======
->>>>>>> 90c3416aea1ba9c50205436e59ae57426e44b35c
 import "./countdown.css";
 
 const Countdown = () => {
