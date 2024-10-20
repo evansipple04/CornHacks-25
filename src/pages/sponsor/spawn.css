@@ -1,0 +1,32 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 80vh;
+}
+
+.Gold,
+.Plat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.plat label {
+  font-size: xx-large;
+  color: darkgreen;
+}
+.platImg {
+  max-width: 650px; /* Adjust the size as needed */
+  height: auto;
+}
+
+
+.goldImg {
+  max-width: 400px;
+  height: auto;
+}
+
