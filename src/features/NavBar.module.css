@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers the navbar horizontally */
   animation: gradientAnimation 5s ease infinite;
-  background: linear-gradient(90deg, red, blue);
+  background: linear-gradient(90deg, #F4D35E, #8FB339);
   background-size: 200% 200%
 }
 
