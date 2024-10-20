@@ -3,7 +3,7 @@ import Countdown from '../../components/countdown'
 import NavBar from '../../features/NavBar'
 const HomePg = () => {
   return (
-    <div>CornHacks-25
+    <div>
       <NavBar/>
       <Countdown/>
     </div>
