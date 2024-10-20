@@ -1,25 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './NavBar.module.css';
+import croppedLogo from '../Images/cropped_raw.png';
+
 const NavBar = () => {
   return (
     <div>
       <nav>
+        <img src={croppedLogo} alt="Logo" className='logo'/>
         <ul>
           <li>
-            <Link to="/"><button>Home</button></Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/sponsors"><button>Sponsors</button></Link>
+            <Link to="/sponsors">Sponsors</Link>
           </li>
           <li>
-            <Link to="/pastProjects"><button>Past Projects</button></Link>
+            <Link to="/pastProjects">Past Projects</Link>
           </li>
           <li>
-            <Link to="/helporganize"><button>Help Organize</button></Link>
+            <Link to="/helporganize">Help Organize</Link>
           </li>
           <li>
-            <Link to="/aboutus"><button>About Us</button></Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
         </ul>
       </nav>

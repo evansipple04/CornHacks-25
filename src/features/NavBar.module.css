@@ -1,9 +1,11 @@
 nav {
   display: flex;
   justify-content: center; /* Centers the navbar horizontally */
+  justify-items: center;
   animation: gradientAnimation 5s ease infinite;
   background: linear-gradient(90deg, #F4D35E, #8FB339);
-  background-size: 200% 200%
+  background-size: 200% 200%;
+  height: 100px;
 }
 
 @keyframes gradient-animation {
@@ -16,6 +18,11 @@ nav {
   100% {
       background-position: 0% 50%;
   }
+}
+
+.logo {
+  height: 20px;
+  margin-right: 20px;
 }
 
 nav ul {
@@ -35,5 +42,5 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: yellow;
+  color: #FFFFFF;
 }
