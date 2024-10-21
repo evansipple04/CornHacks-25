@@ -8,11 +8,15 @@ body {
 }
 
 .container {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 1500px;
+    transform: translateX(-50%);
     text-align: center;
-    margin-top: 100px;
+    z-index: 10;
 }
 
 .timer {

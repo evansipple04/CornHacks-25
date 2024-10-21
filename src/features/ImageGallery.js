@@ -11,6 +11,7 @@ import image3 from'../Images/03cornhacks24.png';
 import image4 from '../Images/1st_Place_Winners.jpg';
 import image5 from '../Images/2nd_Place_Winners.jpg';
 import image6 from '../Images/3rd_Place_Winners.jpg';
+import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
 
 const ImageGallery = () => {
     return (
@@ -59,10 +60,10 @@ const ImageGallery = () => {
 
             <div className="slider-controller">
                 <div className="swiper-button-prev slider-arrow">
-                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    <IoArrowBackOutline className="slider-arrow" />
                 </div>
                 <div className="swiper-button-next slider-arrow">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <IoArrowForwardOutline className="slider-arrow" />
                 </div>
                 <div className="swiper-pagination"></div>
             </div>

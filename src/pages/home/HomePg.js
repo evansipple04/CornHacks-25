@@ -8,18 +8,21 @@ import ImageGallery from '../../features/ImageGallery'
 const HomePg = () => {
   return (
     <>
-      <div className="page-container">
+      <div>
         <NavBar />
-        <Countdown />
       </div>
+      <div>
+      <Countdown />
       
-      <div className="floating-image-container">
-        <img src={croppedLogo} alt="Logo" className='img' />
-        <span id="shadow"></span>
-      </div>
+        <div className="floating-image-container">
+          <img src={croppedLogo} alt="Logo" className='img' />
+          <span id="shadow"></span>
+        </div>
+        
+        <div className="gallery-container">
+          <ImageGallery />
+        </div>
 
-      <div className="gallery-container">
-        <ImageGallery />
       </div>
       </>
   )
