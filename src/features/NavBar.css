@@ -11,6 +11,10 @@
     border-radius: 12px;
 }
 
+.Home:hover , .Sponsors:hover , .PastProjects:hover , .HelpOrganize:hover , .AboutUs:hover {
+    transform: scale(1.1);
+}
+
 .Home::after, .Sponsors::after, .PastProjects::after, .HelpOrganize::after, .AboutUs::after {
     content: "";
     z-index: -1;
