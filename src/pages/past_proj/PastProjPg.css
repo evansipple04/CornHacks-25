@@ -1,17 +1,33 @@
 .title {
     display: flex;
+    float: left;
+    padding-left: 150px;
+    position: static;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    height: 90vh;
+    height: 75vh;
     font-size: 50px;
+  }
+
+.btns {
+    display: flex;
+    float: center;
+    position: static;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+  }
+.btns button {
+    width: 25%;
+    margin: 10px auto;
   }
 
 /* General button styles */
 .proj2024, .proj2023, .proj2022, .proj2021, .proj2020, .proj2019 {
     margin: 10px 100px;
-    padding: 20px 40px;
+    padding: 30px 60px;
     border: none;
     outline: none;
     color: #FFF;
@@ -63,7 +79,7 @@
 
 /* Set the after pseudo-element's background to transparent on hover */
 .proj2024:hover::after, .proj2023:hover::after, .proj2022:hover::after, .proj2021:hover::after, .proj2020:hover::after, .proj2019:hover::after {
-    background: transparent; /* Makes the after background transparent on hover */
+    background: transparent; 
 }
 
 .proj2024:hover, .proj2023:hover, .proj2022:hover, .proj2021:hover, .proj2020:hover, .proj2019:hover {
