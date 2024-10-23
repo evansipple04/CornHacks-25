@@ -1,0 +1,60 @@
+.Home, .Sponsors, .PastProjects, .HelpOrganize, .AboutUs {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #000;  /* Change text color to black */
+    background-color: #FFF;  /* Set background color to white */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.Home::after, .Sponsors::after, .PastProjects::after, .HelpOrganize::after, .AboutUs::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF; /* Change the background color of the hover/active effect to white */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.Home::before, .Sponsors::before, .PastProjects::before, .HelpOrganize::before, .AboutUs::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #dfdf04, #38af00
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.Home:hover::before, .Sponsors:hover::before, .PastProjects:hover::before, .HelpOrganize:hover::before, .AboutUs:hover::before {
+    opacity: 1;
+    animation: glowing 20s linear infinite;
+}
+
+.Home:active, .Sponsors:active, .PastProjects:active, .HelpOrganize:active, .AboutUs:active {
+    color: #FFF; /* On active, set text color to white */
+    background-color: #000; /* On active, set background color to black */
+    font-weight: bold;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
