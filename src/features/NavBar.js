@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './NavBar.module.css';
+import './NavBar.css'
 import croppedLogo from '../Images/cropped_raw.png';
 
 const NavBar = () => {
@@ -10,19 +11,29 @@ const NavBar = () => {
         <img src={croppedLogo} alt="Logo" className='logo'/>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+            <button className="Home">Home</button>
+            </Link>
           </li>
           <li>
-            <Link to="/sponsors">Sponsors</Link>
+            <Link to="/sponsors">
+              <button className="Sponsors">Sponsors</button>
+            </Link>
           </li>
           <li>
-            <Link to="/pastProjects">Past Projects</Link>
+            <Link to="/pastProjects">
+               <button className="PastProjects">PastProjects</button>
+            </Link>
           </li>
           <li>
-            <Link to="/helporganize">Help Organize</Link>
+            <Link to="/helporganize">
+              <button className="HelpOrganize">Help Organize</button>
+            </Link>
           </li>
           <li>
-            <Link to="/aboutus">About Us</Link>
+            <Link to="/aboutus">
+              <button className="AboutUs">About Us</button>
+            </Link>
           </li>
         </ul>
       </nav>
