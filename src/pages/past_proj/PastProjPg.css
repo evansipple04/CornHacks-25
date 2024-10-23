@@ -11,14 +11,15 @@
 /* General button styles */
 .proj2024, .proj2023, .proj2022, .proj2021, .proj2020, .proj2019 {
     margin: 10px 100px;
-    padding: 15px 40px;
+    padding: 20px 40px;
     border: none;
     outline: none;
     color: #FFF;
     cursor: pointer;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     border-radius: 12px;
+    background-color: #333;
 }
 
 /* Background and border effects for all buttons */
@@ -58,6 +59,17 @@
 /* Hover effect for all buttons */
 .proj2024:hover::before, .proj2023:hover::before, .proj2022:hover::before, .proj2021:hover::before, .proj2020:hover::before, .proj2019:hover::before {
     opacity: 1;
+}
+
+/* Set the after pseudo-element's background to transparent on hover */
+.proj2024:hover::after, .proj2023:hover::after, .proj2022:hover::after, .proj2021:hover::after, .proj2020:hover::after, .proj2019:hover::after {
+    background: transparent; /* Makes the after background transparent on hover */
+}
+
+.proj2024:hover, .proj2023:hover, .proj2022:hover, .proj2021:hover, .proj2020:hover, .proj2019:hover {
+    transform: scale(1.1);
+    background-color: white; /* Background color changes to white */
+    color: black; /* Text color changes to black */
 }
 
 /* Active state for all buttons */
