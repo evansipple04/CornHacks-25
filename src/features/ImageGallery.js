@@ -11,7 +11,7 @@ import image3 from'../Images/03cornhacks24.png';
 import image4 from '../Images/1st_Place_Winners.jpg';
 import image5 from '../Images/2nd_Place_Winners.jpg';
 import image6 from '../Images/3rd_Place_Winners.jpg';
-import { IoArrowBackOutline, IoArrowForwardOutline } from 'react-icons/io5';
+import croppedLogo from '../Images/cropped_raw.png';
 
 const ImageGallery = () => {
     return (
@@ -59,14 +59,11 @@ const ImageGallery = () => {
             </SwiperSlide>
 
             <div className="slider-controller">
-                <div className="swiper-button-prev slider-arrow">
-                    <IoArrowBackOutline className="slider-arrow" />
-                </div>
-                <div className="swiper-button-next slider-arrow">
-                    <IoArrowForwardOutline className="slider-arrow" />
-                </div>
+                <div className="swiper-button-prev slider-arrow" style={{ backgroundImage: `url(${croppedLogo})`, transform: 'rotate(-90deg)' }}></div>
+                <div className="swiper-button-next slider-arrow" style={{ backgroundImage: `url(${croppedLogo})`, transform: 'rotate(90deg)' }}></div>
                 <div className="swiper-pagination"></div>
             </div>
+
         </Swiper>
     );
 };
