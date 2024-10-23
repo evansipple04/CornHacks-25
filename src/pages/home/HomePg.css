@@ -17,6 +17,94 @@ body, html {
     overflow: hidden;
 }
 
+.information-container {
+    position: absolute;
+    top: 200px;
+    left: calc(40% + 60px);
+    margin: 100px auto;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.information-conatiner h1 {
+    font-size: 3rem; /* Increase size for H1 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.information-container h2 {
+    font-size: 2rem; /* Increase size for H2 */
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    height: auto;
+    width: auto;
+    min-width: 250px;
+    border: none;
+    outline: none;
+    color: #FFF; 
+    background-color: #333; 
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.home-buttons::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Change the background color of the hover/active effect to white */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.home-buttons::before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #fff, #fff, #fff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.home-buttons:hover::before {
+    opacity: 1;
+    animation: glowing 10s linear infinite;
+}
+
+.home-buttons:active {
+    color: #FFF;
+    background-color: #000;
+    font-weight: bold;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
 .img {
     width: 100%;
     height: auto;

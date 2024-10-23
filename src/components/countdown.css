@@ -28,6 +28,7 @@ body {
   
 .time-box {
     text-align: center;
+    display: block;
     background-color: #f7f5bc;
     padding: 20px;
     border-radius: 10px;
