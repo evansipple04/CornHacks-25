@@ -58,3 +58,8 @@
     50% {background-position: 400% 0;}
     100% {background-position: 0 0;}
 }
+
+.logo {
+    height: 100px;
+    margin-right: 20px;
+  }
