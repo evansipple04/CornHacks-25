@@ -1,7 +1,7 @@
 .title {
     display: flex;
-    float: left;
-    padding-left: 150px;
+    float: right;
+    padding-right: 150px;
     position: static;
     flex-direction: column;
     align-items: center;
@@ -9,33 +9,66 @@
     gap: 50px;
     height: 75vh;
     font-size: 50px;
+    z-index: 2;
   }
+
+.floating-image-container {
+    top: 100px;
+    left: 40px;
+    margin: 100px auto; /* Adjust to bring it up */
+    width: 500px;
+    height: 80vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.past {
+    color: #F4D35E;
+}
+.projects {
+    color: #60b339;
+}
 
 .btns {
     display: flex;
     float: center;
     position: static;
+    padding-left: 200px;
     justify-content: center;
     flex-direction: column;
-    padding-top: 150px;
+    padding-top: 125px;
   }
 .btns button {
-    width: 25%;
-    margin: 10px auto;
-  }
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 35%; 
+    height: auto; 
+    padding: 10px; 
+    margin: 10px auto; 
+    text-align: center; 
+    vertical-align: middle; 
+    cursor: pointer; 
+}
+
+.PastProjectLogo2024, .PastProjectLogo2023, .PastProjectLogo2022, .PastProjectLogo2021, .PastProjectLogo2020, .PastProjectLogo2019 {
+    width: 60px;
+    height: 60px;
+}
 
 /* General button styles */
 .proj2024, .proj2023, .proj2022, .proj2021, .proj2020, .proj2019 {
     margin: 10px 100px;
     padding: 30px 60px;
+    font-size: 20px;
     border: none;
     outline: none;
-    color: #FFF;
+    color: #000;
     cursor: pointer;
     position: relative;
     z-index: 1;
     border-radius: 12px;
-    background-color: #333;
+    background-color: transparent;
 }
 
 /* Background and border effects for all buttons */
@@ -45,18 +78,118 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: transparent;
     left: 0;
     top: 0;
     border-radius: 12px;
 }
 
 /* Glowing effect for all buttons */
-.proj2024::before, .proj2023::before, .proj2022::before, .proj2021::before, .proj2020::before, .proj2019::before {
+.proj2024::before {
     content: "";
     background: linear-gradient(
         45deg, 
-        #F4D35E, #60b339
+        #F4D35E, #60b339, #9ec1fa
+        );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+.proj2023::before {
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #ebff15, #65ff1e,  #4bc9ff
+        );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+.proj2022::before {
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #c86c2b, #60b339, #f1bb17
+        );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+.proj2021::before {
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #F4D35E, #60b339, #4972e2 ,#f67e4b
+        );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+.proj2020::before {
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #c1ce32, #54e3a5
+        );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+}
+
+.proj2019::before {
+    content: "";
+    background: linear-gradient(
+        45deg, 
+        #fff71e, #1be1ba
         );
     position: absolute;
     top: -2px;
@@ -84,8 +217,6 @@
 
 .proj2024:hover, .proj2023:hover, .proj2022:hover, .proj2021:hover, .proj2020:hover, .proj2019:hover {
     transform: scale(1.1);
-    background-color: white; /* Background color changes to white */
-    color: black; /* Text color changes to black */
 }
 
 /* Active state for all buttons */
@@ -104,4 +235,23 @@
     0% {background-position: 0 0;}
     50% {background-position: 400% 0;}
     100% {background-position: 0 0;}
+}
+
+.shift-left {
+    justify-content: flex-start; /* Align buttons to the left */
+    padding-left: 0; /* Remove padding to move buttons closer to the left */
+    margin-left: 0; /* Remove any margin if applied */
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+    width: 100%; /* Ensure the buttons span the full width */
+}
+
+/* Optional: Hide title smoothly */
+.title {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide the title when the state changes */
+.title.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
