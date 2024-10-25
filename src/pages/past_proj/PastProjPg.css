@@ -268,7 +268,7 @@
 .shift-left {
     justify-content: flex-start; 
     padding-left: 0; 
-    margin-left: 0;
+    margin-left: 150;
     transition: all 0.5s ease-in-out;
     width:60%;
 }
@@ -296,4 +296,8 @@
     padding-bottom: 50px;
     overflow: hidden;
     background-color: transparent;
+}
+
+.opacity {
+    opacity: 1;
 }

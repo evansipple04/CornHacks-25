@@ -58,7 +58,7 @@ const PastProjPg = () => {
         </div>
       </body>
 
-      <div className="PPgallery-container">
+      <div className={`PPgallery-container ${isButtonClicked ? 'opacity' : ''}`}>
           <ImageGallery />
         </div>
     </div>
