@@ -1,32 +1,93 @@
-.title {
+
+.divSpace {
+  height: 15vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 50px;
-  height: 80vh;
+  align-items: center;
+  font-size: 40px;
 }
 
+/* old stuff below
+
+/* App.css */
+.sponsor-container {
+  display: flex;
+  flex-direction: column; /* Align children (sponsor groups) vertically */
+  justify-content: center;
+  scroll-behavior: smooth;
+  gap: 40px;
+  align-items: center;
+  height: 80vh; /* Full height of the viewport */
+}
+
+.sponsor-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.Plat,
 .Gold,
-.Plat {
+.Silver,
+.Bronze{
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 200px;
+  align-items: center;
+  gap: 150px; /* Space between images */
 }
 
-.plat label {
-  font-size: xx-large;
-  color: darkgreen;
+.spawnArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  height: inherit;
 }
-.platImg {
+
+.imagePlatinum {
   max-width: 650px; /* Adjust the size as needed */
   height: auto;
 }
 
-
-.goldImg {
-  max-width: 400px;
+.imageGold {
+  max-width: 500px; /* Adjust the size as needed */
   height: auto;
 }
 
+.imageSilver {
+    max-width: 350px;
+    height: auto;
+}
+
+.imageBronze {
+  max-width: 200px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.color-box {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platinum {
+  background-color: paleturquoise;
+  border-color: paleturquoise;
+}
+
+.gold {
+  background-color: gold;
+  border-color: gold;
+}
+
+.silver {
+    background-color: silver;
+    border-color: silver;
+}
+
+.bronze {
+  background-color: #CD7F32;
+  border-color: #CD7F32;
+}
