@@ -14,17 +14,16 @@ const Sponsor = () => {
   const ref = useRef();
 
   useEffect(() => {    
-    let hoes = gsap.utils.toArray('.spawnArea');
-    hoes.forEach(hoe => {
-      gsap.fromTo(hoe,{x: -600, opacity: 0}, {
+    let areas = gsap.utils.toArray('.spawnArea');
+    areas.forEach(area => {
+      gsap.fromTo(area,{x: -600, opacity: 0}, {
         opacity: 1,
         x: 0,
         ease: 'none',
-        duration: 2,
         scrollTrigger: {
-          trigger: hoe,
+          trigger: area,
           start:'center 70%',
-          toggleActions: "play none none reset",
+          toggleActions: "play none none reverse",
         },
       })
     })
