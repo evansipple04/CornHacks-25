@@ -24,7 +24,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/pastProjects">
-               <button className="PastProjects">PastProjects</button>
+               <button className="PastProjects">Past Projects</button>
             </Link>
           </li>
           <li>

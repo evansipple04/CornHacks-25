@@ -12,14 +12,42 @@
     z-index: 2;
   }
 
-.floating-image-container {
-    top: 100px;
+.PPfloating-image-container {
+    position: absolute; /* or fixed */
+    top: 185px;
     left: 40px;
     margin: 100px auto; /* Adjust to bring it up */
     width: 500px;
     height: 80vh;
     overflow: hidden;
+}
+
+.PPimg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(0deg);
+    }
+}
+
+#shadow {
     position: absolute;
+    height: 20px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkgray;
+    border-radius: 50%;
+    filter: blur(5px);
+    animation: shrink 3s ease-out infinite;
 }
 
 .past {
@@ -238,11 +266,11 @@
 }
 
 .shift-left {
-    justify-content: flex-start; /* Align buttons to the left */
-    padding-left: 0; /* Remove padding to move buttons closer to the left */
-    margin-left: 0; /* Remove any margin if applied */
-    transition: all 0.5s ease-in-out; /* Smooth transition */
-    width: 100%; /* Ensure the buttons span the full width */
+    justify-content: flex-start; 
+    padding-left: 0; 
+    margin-left: 150;
+    transition: all 0.5s ease-in-out;
+    width:60%;
 }
 
 /* Optional: Hide title smoothly */
@@ -254,4 +282,22 @@
 .title.hidden {
     opacity: 0;
     visibility: hidden;
+}
+
+.PPgallery-container {
+    opacity: 0;
+    position: absolute;
+    top: 275px;
+    right: 350px;
+    margin: 20px auto;
+    width: 100%; /* Adjust the width of the galslery */
+    max-width: 750px;
+    text-align: center;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.opacity {
+    opacity: 1;
 }
