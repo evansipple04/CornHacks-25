@@ -1,8 +1,13 @@
 import React, { useRef, useEffect } from 'react'
 import NavBar from '../../features/NavBar';
+<<<<<<< HEAD
 import nelnet from '../../Images/nelnet.png';
 import olson from '../../Images/olsson.png';
 import sandhills from '../../Images/sandhills.png'
+=======
+import nelnet from '../../Images/nelnet.webp';
+import olson from '../../Images/olsson.webp'
+>>>>>>> 343c63dad85452c149fa19fe06686399f61cef13
 import './spawn.css';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
