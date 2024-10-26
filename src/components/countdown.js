@@ -25,7 +25,7 @@ const Countdown = () => {
       }, []);
     
       return (
-        <div className="container">
+        <div className="timer-container">
           <div className="timer">
             <div className="time-box">
               <p className="time">{timeLeft.days}</p>
