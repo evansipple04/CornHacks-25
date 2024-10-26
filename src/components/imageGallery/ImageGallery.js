@@ -17,56 +17,58 @@ import "./ImageGallery.css";
 
 const ImageGallery = () => {
     return (
-        <Swiper
-            effect={ 'coverflow' }
-            grabCursor={ true }
-            centeredSlides={ true }
-            loop={ true }
-            slidesPerView={ 'auto' }
-            coverflowEffect={
-                {
-                    rotate: 0,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 2.5,
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        pagination={{ el: "swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container"
+      >
+        <SwiperSlide>
+          <img src={image1} alt="image1" loading="lazy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image2} alt="image2" loading="lazy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image3} alt="image3" loading="lazy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image4} alt="image4" loading="lazy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image5} alt="image5" loading="lazy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={image6} alt="image6" loading="lazy" />
+        </SwiperSlide>
 
-                }
-            }
-            pagination={{el:'swiper-pagination',clickable:true}}
-            navigation={{
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev',
-                clickable: true
-            }}
-            modules={[EffectCoverflow, Pagination, Navigation]}
-            className='swiper_container'
-            >
-            <SwiperSlide>
-                <img src ={image1} alt ="image1" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src ={image2} alt ="image2" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src ={image3} alt ="image3" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src ={image4} alt ="image4" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src ={image5} alt ="image5" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src ={image6} alt ="image6" />
-            </SwiperSlide>
-
-            <div className="slider-controller">
-                <div className="swiper-button-prev slider-arrow" style={{ backgroundImage: `url(${croppedLogo})` }}></div>
-                <div className="swiper-button-next slider-arrow" style={{ backgroundImage: `url(${croppedLogo})` }}></div>
-                <div className="swiper-pagination"></div>
-            </div>
-
-        </Swiper>
+        <div className="slider-controller">
+          <div
+            className="swiper-button-prev slider-arrow"
+            style={{ backgroundImage: `url(${croppedLogo})` }}
+          ></div>
+          <div
+            className="swiper-button-next slider-arrow"
+            style={{ backgroundImage: `url(${croppedLogo})` }}
+          ></div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
     );
 };
 
