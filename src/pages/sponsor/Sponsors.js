@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import NavBar from '../../features/NavBar';
-import nelnet from '../../Images/nelnet.png';
-import olson from '../../Images/olsson.png'
+import nelnet from '../../Images/nelnet.webp';
+import olson from '../../Images/olsson.webp'
 import './spawn.css';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';

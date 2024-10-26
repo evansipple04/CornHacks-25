@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './NavBar.module.css';
 import './NavBar.css'
-import croppedLogo from '../Images/2025Logo.png';
+import croppedLogo from '../Images/2025Logo.webp';
 
 const NavBar = () => {
   return (
