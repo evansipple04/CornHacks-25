@@ -39,22 +39,22 @@ const ImageGallery = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src={image1} alt="image1" loading="lazy" />
+          <img src={image1} alt="image1" className="swiper-slide img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image2} alt="image2" loading="lazy" />
+          <img src={image2} alt="image2" className="swiper-slide img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image3} alt="image3" loading="lazy" />
+          <img src={image3} alt="image3" className="swiper-slide img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image4} alt="image4" loading="lazy" />
+          <img src={image4} alt="image4" className="swiper-slide img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image5} alt="image5" loading="lazy" />
+          <img src={image5} alt="image5" className="swiper-slide img" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image6} alt="image6" loading="lazy" />
+          <img src={image6} alt="image6" className="swiper-slide img" />
         </SwiperSlide>
 
         <div className="slider-controller">

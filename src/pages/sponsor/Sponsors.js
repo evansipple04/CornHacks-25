@@ -1,12 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import NavBar from '../../features/NavBar';
 import nelnet from '../../Images/nelnet.webp';
-import olson from '../../Images/olsson.webp'
-import sandhills from '../../Images/sandhills.webp'
-import conagra from '../../Images/conagra.webp'
-
+import olson from '../../Images/olsson.webp';
+import sandhills from '../../Images/sandhills.webp';
 import './spawn.css';
-import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -26,8 +23,8 @@ const Sponsor = () => {
           start:'center 50%',
           end: '+=100px',
           //pin: true,
-          scrub: 1,
-          toggleActions: "play none none reverse",
+          scrub: 3,
+          toggleActions: "play none none",
         },
       })
     })
@@ -49,9 +46,6 @@ const Sponsor = () => {
             <div className='Plat'>
               <Link to={"https://www.olsson.com/"}>
                 <img src={olson} alt='olson' className='imagePlatinum' />
-              </Link>
-              <Link to={"https://www.olsson.com/"}>
-                <img src={conagra} alt='olson' className='imagePlatinum' />
               </Link>
           </div>
             </div>
