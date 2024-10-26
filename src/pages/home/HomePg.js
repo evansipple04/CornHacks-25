@@ -1,9 +1,9 @@
 import React from 'react'
 import Countdown from '../../components/countdown'
 import NavBar from '../../features/NavBar'
-import croppedLogo from '../../Images/cropped_raw.png'
+import croppedLogo from '../../Images/cropped_raw.webp'
 import './HomePg.css'
-import ImageGallery from '../../features/ImageGallery'
+import ImageGallery from '../../components/imageGallery/ImageGallery'
 
 const HomePg = () => {
   return (

@@ -2,14 +2,14 @@ import React from 'react'
 import { useState } from 'react';
 // import { Link } from 'react-scroll';
 import NavBar from '../../features/NavBar';
-import ImageGallery from '../../features/ImageGallery'
+import ImageGallery from '../../components/imageGallery/ImageGallery'
 import './PastProjPg.css';
-import ppLogos from '../../Images/2025Logo.png';
-import logo19 from "../../Images/cropped_raw.png";
+import ppLogos from '../../Images/2025Logo.webp';
+import logo19 from "../../Images/cropped_raw.webp";
 import logo20 from "../../Graphics/cornhacks.svg";
 import logo21 from "../../Graphics/logo21.svg";
-import logo22 from "../../Images/logo22.png";
-import logo23 from "../../Images/2023_final_logo_only.png";
+import logo22 from "../../Images/logo22.webp";
+import logo23 from "../../Images/2023_final_logo_only.webp";
 import logo24 from "../../Graphics/corn3d.svg";
 
 const PastProjPg = () => {
