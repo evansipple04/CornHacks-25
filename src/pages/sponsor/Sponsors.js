@@ -1,13 +1,10 @@
 import React, { useRef, useEffect } from 'react'
 import NavBar from '../../features/NavBar';
-<<<<<<< HEAD
-import nelnet from '../../Images/nelnet.png';
-import olson from '../../Images/olsson.png';
-import sandhills from '../../Images/sandhills.png'
-=======
 import nelnet from '../../Images/nelnet.webp';
 import olson from '../../Images/olsson.webp'
->>>>>>> 343c63dad85452c149fa19fe06686399f61cef13
+import sandhills from '../../Images/sandhills.webp'
+import conagra from '../../Images/conagra.webp'
+
 import './spawn.css';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
@@ -29,8 +26,8 @@ const Sponsor = () => {
           start:'center 50%',
           end: '+=100px',
           //pin: true,
-          scrub: 3,
-          toggleActions: "play none none",
+          scrub: 1,
+          toggleActions: "play none none reverse",
         },
       })
     })
@@ -52,6 +49,9 @@ const Sponsor = () => {
             <div className='Plat'>
               <Link to={"https://www.olsson.com/"}>
                 <img src={olson} alt='olson' className='imagePlatinum' />
+              </Link>
+              <Link to={"https://www.olsson.com/"}>
+                <img src={conagra} alt='olson' className='imagePlatinum' />
               </Link>
           </div>
             </div>
