@@ -268,7 +268,7 @@
 .shift-left {
     justify-content: flex-start; 
     padding-left: 0; 
-    margin-left: 150;
+    margin-left: 150px;
     transition: all 0.5s ease-in-out;
     width:60%;
 }
@@ -287,8 +287,8 @@
 .PPgallery-container {
     opacity: 0;
     position: absolute;
-    top: 275px;
-    right: 350px;
+    top: 175px;
+    right: 200px;
     margin: 20px auto;
     width: 100%; /* Adjust the width of the galslery */
     max-width: 750px;
@@ -300,4 +300,6 @@
 
 .opacity {
     opacity: 1;
+    justify-content: flex-start; 
+    transition: all 0.5s ease-in-out;
 }

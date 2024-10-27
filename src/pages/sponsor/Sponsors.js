@@ -5,9 +5,7 @@ import olson from '../../Images/olsson.webp'
 import sandhills from '../../Images/sandhills.webp'
 import conagra from '../../Images/conagra.webp'
 import spreetail from '../../Images/spreetail.webp'
-
 import './spawn.css';
-import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -27,8 +25,8 @@ const Sponsor = () => {
           start:'center 50%',
           end: '+=100px',
           //pin: true,
-          scrub: 1,
-          toggleActions: "play none none reverse",
+          scrub: 3,
+          toggleActions: "play none none",
         },
       })
     })
@@ -60,9 +58,9 @@ const Sponsor = () => {
               <Link to={"https://www.olsson.com/"}>
                 <img src={olson} alt='olson' className='imagePlatinum' />
               </Link>
+          </div> 
             </div>
           </div>
-        </div>
         <div className='spawnArea'>
           <div className='title colored-box gold'>
           <label>Our 2025 Gold Sponsors</label>
