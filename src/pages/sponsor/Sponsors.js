@@ -4,6 +4,7 @@ import nelnet from '../../Images/nelnet.webp';
 import olson from '../../Images/olsson.webp'
 import sandhills from '../../Images/sandhills.webp'
 import conagra from '../../Images/conagra.webp'
+import spreetail from '../../Images/spreetail.webp'
 
 import './spawn.css';
 import { useGSAP } from '@gsap/react'
@@ -50,12 +51,18 @@ const Sponsor = () => {
               <Link to={"https://www.olsson.com/"}>
                 <img src={olson} alt='olson' className='imagePlatinum' />
               </Link>
-              <Link to={"https://www.olsson.com/"}>
-                <img src={conagra} alt='olson' className='imagePlatinum' />
+              <Link to={"https://www.conagrabrands.com/"}>
+                <img src={conagra} alt='conagrabrands' className='imagePlatinum' />
               </Link>
-          </div>
+              <Link to={"https://www.spreetail.com/"}>
+                <img src={spreetail} alt='spreetail' className='imagePlatinum' />
+              </Link>
+              <Link to={"https://www.olsson.com/"}>
+                <img src={olson} alt='olson' className='imagePlatinum' />
+              </Link>
             </div>
           </div>
+        </div>
         <div className='spawnArea'>
           <div className='title colored-box gold'>
           <label>Our 2025 Gold Sponsors</label>
