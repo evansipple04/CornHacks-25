@@ -36,25 +36,94 @@ const ImageGallery = () => {
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
+        className="swiper-container"
       >
         <SwiperSlide>
-          <img src={image1} alt="image1" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image1} alt="image1" className="slide-img" />
+            <div className="slide-text">
+              <h2>What is CornHacks?</h2>
+              <h3>CornHacks is a coding/design</h3>
+              <h3>competition where individuals or</h3>
+              <h3>teams of up to four people compete</h3>
+              <h3>over a 24-Hour period to see who can</h3>
+              <h3>create the best project. Like most</h3>
+              <h3>hackathons, CornHacks is focused</h3>
+              <h3>on giving participants a chance to show</h3>
+              <h3>off their skills while meeting people with</h3>
+              <h3>similar interests and networking with</h3>
+              <h3>local businesses.</h3>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image2} alt="image2" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image2} alt="image2" className="slide-img" />
+            <div className="slide-text">
+            <h2>When and where is CornHacks?</h2>
+              <h3>The upcoming CornHacks</h3>
+              <h3>will be from February</h3>
+              <h3>15th-16th, 2025. It will</h3>
+              <h3>be in the Johnny Carson Center</h3>
+              <h3>for Emerging Media Arts on</h3>
+              <h3>1300 Q Street, Lincoln Nebraska.</h3>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image3} alt="image3" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image3} alt="image3" className="slide-img" />
+            <div className="slide-text">
+            <h2>Why CornHacks?</h2>
+              <h3>CornHacks is an excellent</h3>
+              <h3>experience for a variety of reasons.</h3>
+              <h3>It gives young aspiring programmers</h3>
+              <h3>a chance to apply their skills through</h3>
+              <h3>building a project of their choice</h3>
+              <h3>which is creative and fun. You will</h3>
+              <h3>be given a chance to work with friends</h3>
+              <h3>and network with local businesses.</h3>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image4} alt="image4" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image4} alt="image4" className="slide-img" />
+            <div className="slide-text">
+            <h2>What will I make?</h2>
+              <h3>Well, anything you'd like!</h3>
+              <h3>This years theme will be "2100: A Corn Odyssey".</h3>
+              <h3>You have 24 hours to create something</h3>
+              <h3>that could be science fiction, dystopian,</h3>
+              <h3>or futuristic. Create anything</h3>
+              <h3>as long as it is appropriate and </h3>
+              <h3>fits the theme. If you are curious</h3>
+              <h3>on what student have built in the past,</h3>
+              <h3>check out the "Past Projects" tab!</h3>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image5} alt="image5" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image5} alt="image5" className="slide-img" />
+            <div className="slide-text">
+            <h2>What can I win?</h2>
+              <h3>Last year people won</h3>
+              <h3>Ipads. money too</h3>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image6} alt="image6" className="swiper-slide img" />
+          <div className="slide-content">
+            <img src={image6} alt="image6" className="slide-img" />
+            <div className="slide-text">
+            <h2>What if I have more questions?</h2>
+              <h3>If anyone has more questions</h3>
+              <h3>about the event, plese feel</h3>
+              <h3>free to email us!</h3>
+              <h3>Contact Us: cornhacks@unl.edu</h3>
+            </div>
+          </div>
         </SwiperSlide>
 
         <div className="slider-controller">
