@@ -14,7 +14,7 @@ The CornHacks Club website provides users with an interactive platform to explor
   - Click on "Past Projects" in the main navigation menu to view a collection of previous projects.
   - Browse the list of projects and select any project to view additional details, such as project descriptions, images, and the team involved.
 
-### 2. Become a Sponsor
+### 2. Become a Sponsor 
 
 - **Navigate to the "Sponsor" tab**:
   - Click on "Sponsor" in the main Page to learn about sponsorship opportunities with CornHacks.
