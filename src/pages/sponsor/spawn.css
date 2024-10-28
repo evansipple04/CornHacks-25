@@ -1,11 +1,22 @@
 
+
+
 .divSpace {
-  height: 15vh;
+  height: 22vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+}
+.mainHold {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: auto;
+}
+
+.mainHold::-webkit-scrollbar{
+  display: hidden;
 }
 
 /* old stuff below
@@ -15,24 +26,35 @@
   display: flex;
   flex-direction: column; /* Align children (sponsor groups) vertically */
   justify-content: center;
-  scroll-behavior: smooth;
-  gap: 40px;
+  gap: 15vh;
   align-items: center;
-  height: 80vh; /* Full height of the viewport */
+  margin-bottom: 80px;
+  height: auto; /* Full height of the viewport */
 }
 
 .sponsor-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none; /* Hides for Chrome, Safari, and Opera */
 }
 
+
+/* all containers for each spawn area or tier*/
 .Plat,
 .Gold,
 .Silver,
 .Bronze{
   display: flex;
+  flex-flow: row wrap; /* Makes the row wrap for the logos*/
   justify-content: center;
   align-items: center;
+  width: 75vw;
+  max-height: fit-content;
   gap: 150px; /* Space between images */
+}
+
+.title {
+  flex-direction: column;
+  height: fit-content;
+  max-width: 75vw;
 }
 
 .spawnArea {
@@ -40,9 +62,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-  height: inherit;
+  flex-wrap: wrap;
+  width: 75vw;
+  height: auto;
 }
+
 
 .imagePlatinum {
   max-width: 650px; /* Adjust the size as needed */
@@ -50,16 +74,19 @@
 }
 
 .imageGold {
+  display: inline-block;
   max-width: 500px; /* Adjust the size as needed */
   height: auto;
 }
 
 .imageSilver {
-    max-width: 350px;
-    height: auto;
+  display: flex;
+  max-width: 350px;
+  height: auto;
 }
 
 .imageBronze {
+  display: flex;
   max-width: 200px; /* Adjust the size as needed */
   height: auto;
 }

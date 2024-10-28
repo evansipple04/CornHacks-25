@@ -18,14 +18,11 @@ body, html {
 }
 
 .information-container {
-    position: absolute;
-    top: 200px;
-    left: calc(40% + 60px);
+    position: relative;
     margin: 100px auto;
-    width: 40%;
     padding: 20px;
     text-align: center;
-    overflow: hidden;
+    z-index: 10;
 }
 
 .information-conatiner h1 {
@@ -105,13 +102,14 @@ body, html {
     100% {background-position: 0 0;}
 }
 
-.img {
+.floating-image-container__img {
     width: 100%;
     height: auto;
     max-height: 100%;
     object-fit: cover;
     animation: float 3s ease-out infinite;
     transform: rotate(15deg);
+    filter: drop-shadow(darkgray 20px 20px);
 }
 
 @keyframes float {
@@ -122,96 +120,3 @@ body, html {
         transform: translateY(-20px) rotate(10deg);
     }
 }
-
-#shadow {
-    position: absolute;
-    height: 20px;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: darkgray;
-    border-radius: 50%;
-    filter: blur(5px);
-    animation: shrink 3s ease-out infinite;
-}
-
-@keyframes shrink {
-    0%{ width: 50% }
-    50%{ width: 30% }
-    100%{ width: 50% }
-}
-
-.gallery-container {
-    position: absolute;
-    top: 850px;
-    right: 550px;
-    margin: 20px auto;
-    width: 100%; /* Adjust the width of the gallery */
-    max-width: 750px;
-    text-align: center;
-    padding-bottom: 50px;
-    overflow: hidden;
-    background-color: transparent;
-}
-  
-.swiper_container {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    display: flex;
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    position: relative;
-    opacity: 0.75;
-    transition: opacity 0.5s ease, transform 0.3s ease;
-    z-index: 1;
-}
-  
-.swiper-slide-active {
-    opacity: 1;
-    z-index: 3;
-    transform: scale(1,1);
-}
-
-.swiper-slide-next, .swiper-slide-prev {
-    opacity: 0.75;
-    z-index: 2;
-}
-
-.swiper-slide img {
-    width: auto;
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 15px;
-    margin: 0 auto;
-    z-index: 3;
-}
-
-.slider-arrow {
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.swiper-button-prev {
-    display: none;
-}
-
-.swiper-button-next {
-    display: none;
-}
-
-.slider-arrow:hover {
-    transform: scale(1.1);
-}
-  

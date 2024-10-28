@@ -7,14 +7,12 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+.timer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 1500px;
-    transform: translateX(-50%);
     text-align: center;
     z-index: 10;
 }

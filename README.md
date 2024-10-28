@@ -1,36 +1,75 @@
-# CornHacks Club Website
+<<<<<<< HEAD
+# Getting Started with Create React App
 
-This website is designed to showcase past projects, enable sponsorship, and allow participant registration for the CornHacks club. Below is an outline of the main tasks available on the site.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Website Overview
+## Available Scripts
 
-The CornHacks Club website provides users with an interactive platform to explore past projects, sponsor future events, and register as participants.
+In the project directory, you can run:
 
-## Features
+### `npm start`
 
-### 1. View Past Projects
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- **Navigate to the "Past Projects" page**:
-  - Click on "Past Projects" in the main navigation menu to view a collection of previous projects.
-  - Browse the list of projects and select any project to view additional details, such as project descriptions, images, and the team involved.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### 2. Become a Sponsor 
+### `npm test`
 
-- **Navigate to the "Sponsor" tab**:
-  - Click on "Sponsor" in the main Page to learn about sponsorship opportunities with CornHacks.
-  - Here, you'll find details on how to support the club, the benefits of sponsorship, and a form to get started as a sponsor.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 3. Register as a Participant
+### `npm run build`
 
-- **Navigate to the "Register" tab**:
-  - Select "Register" from the main page to access participant registration.
-  - Fill out the registration form to sign up as a participant in upcoming events, and review event dates and other relevant information.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Getting Started
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-For developers and contributors:
-1. Clone the repository.
-2. Run `npm install` to set up dependencies.
-3. Run `npm start` to launch the development server.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Right now we only have the 1st task done, where you can click and see previous projects.
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# CornHacks-25
+Our own cornhacks repository
+>>>>>>> dedd3d6 (Initial commit)
