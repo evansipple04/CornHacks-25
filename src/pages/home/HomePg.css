@@ -26,13 +26,13 @@ body, html {
 }
 
 .information-conatiner h1 {
-    font-size: 3rem; /* Increase size for H1 */
+    font-size: 4em; /* Increase size for H1 */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .information-container h2 {
-    font-size: 2rem; /* Increase size for H2 */
+    font-size: 4rem; /* Increase size for H2 */
     font-weight: normal;
     margin-bottom: 30px;
 }

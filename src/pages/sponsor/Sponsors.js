@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from 'react'
 import NavBar from '../../features/NavBar';
 import nelnet from '../../Images/nelnet.webp';
-import olson from '../../Images/olsson.webp';
-import sandhills from '../../Images/sandhills.webp';
+import olson from '../../Images/olsson.webp'
+import sandhills from '../../Images/sandhills.webp'
+import conagra from '../../Images/conagra.webp'
+import spreetail from '../../Images/spreetail.webp'
 import './spawn.css';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
@@ -47,7 +49,16 @@ const Sponsor = () => {
               <Link to={"https://www.olsson.com/"}>
                 <img src={olson} alt='olson' className='imagePlatinum' />
               </Link>
-          </div>
+              <Link to={"https://www.conagrabrands.com/"}>
+                <img src={conagra} alt='conagrabrands' className='imagePlatinum' />
+              </Link>
+              <Link to={"https://www.spreetail.com/"}>
+                <img src={spreetail} alt='spreetail' className='imagePlatinum' />
+              </Link>
+              <Link to={"https://www.olsson.com/"}>
+                <img src={olson} alt='olson' className='imagePlatinum' />
+              </Link>
+          </div> 
             </div>
           </div>
         <div className='spawnArea'>
