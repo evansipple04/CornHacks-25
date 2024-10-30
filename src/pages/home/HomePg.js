@@ -4,6 +4,7 @@ import NavBar from '../../features/NavBar'
 import croppedLogo from '../../Images/cropped_raw.webp'
 import './HomePg.css'
 import ImageGallery from '../../components/imageGallery/ImageGallery'
+import Socialpage from '../../components/socialButtons/socials'
 
 const HomePg = () => {
   return (
@@ -36,6 +37,10 @@ const HomePg = () => {
         <div className="gallery-container">
           <ImageGallery />
         </div>
+      </div>
+      
+      <div>
+        <Socialpage />
       </div>
     </>
   );
