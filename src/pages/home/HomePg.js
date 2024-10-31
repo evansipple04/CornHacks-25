@@ -1,10 +1,11 @@
-import React from 'react'
-import Countdown from '../../components/countdown'
-import NavBar from '../../features/NavBar'
-import croppedLogo from '../../Images/cropped_raw.webp'
-import './HomePg.css'
-import ImageGallery from '../../components/imageGallery/ImageGallery'
-import Socialpage from '../../components/socialButtons/socials'
+import React from "react";
+import Countdown from "../../components/countdown";
+import NavBar from "../../features/NavBar";
+import croppedLogo from "../../Images/cropped_raw.webp";
+import "./HomePg.css";
+import ImageGallery from "../../components/imageGallery/ImageGallery";
+import Socialpage from "../../components/socialButtons/socials";
+import { Link } from "react-router-dom";
 
 const HomePg = () => {
   return (
@@ -29,21 +30,23 @@ const HomePg = () => {
           <button type="button" className="home-buttons">
             Register
           </button>
-          <button type="button" className="home-buttons">
-            Sponsor
-          </button>
+          <Link to="/sponsors">
+            <button type="button" className="home-buttons">
+              Sponsor
+            </button>
+          </Link>
         </div>
 
         <div className="gallery-container">
           <ImageGallery />
         </div>
       </div>
-      
+
       <div>
         <Socialpage />
       </div>
     </>
   );
-}
+};
 
-export default HomePg
+export default HomePg;
