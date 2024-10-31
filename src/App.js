@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import HomePg from './pages/home/HomePg';
 import Sponsor from './pages/sponsor/Sponsors'
-import AboutUsPg from './pages/about_Us/AboutUsPg';
 import HelpOrgPg from './pages/help_org/HelpOrgPg';
 import PastProjPg from './pages/past_proj/PastProjPg';
 
@@ -21,7 +20,6 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePg/>} />
         <Route path="/sponsors" element={<Sponsor/>}/>
-        <Route path="/aboutus" element={<AboutUsPg/>} />
         <Route path="/helporganize" element={<HelpOrgPg/>} />
         <Route path="/pastProjects" element={<PastProjPg/>} />
       </Routes>

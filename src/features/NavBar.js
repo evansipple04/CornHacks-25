@@ -32,11 +32,6 @@ const NavBar = () => {
               <button className="HelpOrganize">Help Organize</button>
             </Link>
           </li>
-          <li>
-            <Link to="/aboutus">
-              <button className="AboutUs">About Us</button>
-            </Link>
-          </li>
         </ul>
       </nav>
     </div>
