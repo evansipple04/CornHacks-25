@@ -28,7 +28,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/helporganize">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfKXfQ-5Ppt3dTxJjdI4FfmHuOhnEx1qB4oLgkKqYK_mLal0Q/viewform?embedded=true">
               <button className="HelpOrganize">Help Organize</button>
             </Link>
           </li>
