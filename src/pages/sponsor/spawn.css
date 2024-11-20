@@ -55,6 +55,11 @@
   flex-direction: column;
   height: fit-content;
   max-width: 75vw;
+  position: relative;
+  margin: 0px auto;
+  padding: 40px;
+  text-align: center;
+  z-index: 10;
 }
 
 .spawnArea {
@@ -117,4 +122,15 @@
 .bronze {
   background-color: #CD7F32;
   border-color: #CD7F32;
+}
+.sponsor-background {
+  background-color: #fdf5e6; /* pastel yellow */
+  background: url('../../Images/Background2.png'); /* Replace with your image path */ 
+  background-repeat: repeat;
+  background-size: cover; /* Adjusts to cover the entire screen */
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+
+
 }

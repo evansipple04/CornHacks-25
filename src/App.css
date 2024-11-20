@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+.background {
+  background-color: #fdf5e6; /* pastel yellow */
+  background-image: url('./Images/Background2.png'); /* Replace with your image path */
+  background-size: cover; /* Adjusts to cover the entire screen */
+  background-position: center;
+  height: 100%; /* Full viewport height */
+  width: 100%;
+
+
+}
+

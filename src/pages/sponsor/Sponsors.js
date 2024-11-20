@@ -33,6 +33,9 @@ const Sponsor = () => {
 }, {scope: '.sponsor-container'});
 
   return (
+    <div className="sponsor-background">
+
+    
     <section className='mainHold'>
       <NavBar/>
       <div className='title'>
@@ -84,6 +87,7 @@ const Sponsor = () => {
         <div className='divSpace'/>
         </section>
     </section>
+    </div>
   )
 }
 
