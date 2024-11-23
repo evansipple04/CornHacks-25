@@ -15,7 +15,7 @@ import PastProjPg from "./pages/past_proj/PastProjPg";
 
 function App() {
   return (
-    <div className="background">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
