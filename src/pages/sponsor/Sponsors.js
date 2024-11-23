@@ -16,7 +16,7 @@ const Sponsor = () => {
   useEffect(() => {    
     let areas = gsap.utils.toArray('.spawnArea');
     areas.forEach(area => {
-      gsap.fromTo(area,{x: -600, opacity: 0}, {
+      gsap.fromTo(area,{x: -550, opacity: 0}, {
         opacity: 1,
         x: 0,
         ease: "power3",
@@ -25,22 +25,21 @@ const Sponsor = () => {
           start:'center 50%',
           end: '+=100px',
           //pin: true,
-          scrub: 3,
-          toggleActions: "play none none",
+          scrub: 2,
+          toggleActions: "play none none reverse",
         },
+        immediateRender: true,
       })
     })
 }, {scope: '.sponsor-container'});
 
   return (
     <div className="sponsor-background">
-
-    
     <section className='mainHold'>
       <NavBar/>
-      <div className='title'>
+      <div className='mainTitle'>
         <label>
-            Our 2025 Sponsors
+          Our 2025 Sponsors
         </label>
       </div>
       <div className='divSpace'/>
@@ -57,9 +56,6 @@ const Sponsor = () => {
               </Link>
               <Link to={"https://www.spreetail.com/"}>
                 <img src={spreetail} alt='spreetail' className='imagePlatinum' />
-              </Link>
-              <Link to={"https://www.olsson.com/"}>
-                <img src={olson} alt='olson' className='imagePlatinum' />
               </Link>
           </div> 
             </div>
@@ -85,6 +81,16 @@ const Sponsor = () => {
           </div>
         </div>
         <div className='divSpace'/>
+        <div className='becomeSec'>
+          <label>
+            Become a Sponsor!
+            <p>
+              Short paragraph on how
+            </p>
+          </label>
+          
+
+        </div>
         </section>
     </section>
     </div>
