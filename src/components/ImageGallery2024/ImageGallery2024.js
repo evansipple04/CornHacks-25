@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './ImageGallery2024.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -8,12 +9,10 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import image1 from '../../Images/1st_Place_Winners.webp';
 import image2 from '../../Images/2nd_Place_Winners.webp';
 import image3 from '../../Images/3rd_Place_Winners.webp';
-import image4 from '../../Images/01cornhacks24.webp';
-import image5 from '../../Images/02cornhacks24.webp';
-import image6 from'../../Images/03cornhacks24.webp';
+import image4 from '../../Images/Story_Track_Winners.webp';
+import image5 from '../../Images/Simulation_Track_Winners.webp';
+import image6 from'../../Images/General_Track_Winners.webp';
 import croppedLogo from '../../Images/cropped_raw.webp';
-
-import "./ImageGallery2024.css";
 
 const ImageGallery2024 = () => {
     return (
@@ -89,17 +88,17 @@ const ImageGallery2024 = () => {
         <SwiperSlide>
           <div className="slide-content2024">
             <img src={image4} alt="image4" className="slide-img2024" />
-            <div className="slide-text2024">
-            <h2>What will I make?</h2>
-              <h3>Well, anything you'd like!</h3>
-              <h3>This years theme will be "2100: A Corn Odyssey".</h3>
-              <h3>You have 24 hours to create something</h3>
-              <h3>that could be science fiction, dystopian,</h3>
-              <h3>or futuristic. Create anything</h3>
-              <h3>as long as it is appropriate and </h3>
-              <h3>fits the theme. If you are curious</h3>
-              <h3>on what student have built in the past,</h3>
-              <h3>check out the "Past Projects" tab!</h3>
+            <div className="slide-text2024">\
+            <h1>Best Story</h1>
+            <a
+              href="https://github.com/WildkrattFan/CornHacks-2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='projectLink'
+            >
+              <h2>Fortunes Gambit: Realm of Chance</h2>
+            </a>
+              <h3>Zoe Kerchal, Owen Addison, Leo Martin, Andrew Wiebe</h3>
             </div>
           </div>
         </SwiperSlide>
@@ -107,9 +106,16 @@ const ImageGallery2024 = () => {
           <div className="slide-content2024">
             <img src={image5} alt="image5" className="slide-img2024" />
             <div className="slide-text2024">
-            <h2>What can I win?</h2>
-              <h3>Last year people won</h3>
-              <h3>Ipads. money too</h3>
+            <h1>Simulation</h1>
+            <a
+              href="https://github.com/jackrankin/brAIn_rot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='projectLink'
+            >
+              <h2>brAIn rot</h2>
+            </a>
+              <h3>Chaitra, Jack, Drew, Tong</h3>
             </div>
           </div>
         </SwiperSlide>
@@ -117,11 +123,16 @@ const ImageGallery2024 = () => {
           <div className="slide-content2024">
             <img src={image6} alt="image6" className="slide-img2024" />
             <div className="slide-text2024">
-            <h2>What if I have more questions?</h2>
-              <h3>If anyone has more questions</h3>
-              <h3>about the event, plese feel</h3>
-              <h3>free to email us!</h3>
-              <h3>Contact Us: cornhacks@unl.edu</h3>
+            <h1>General</h1>
+            <a
+              href="https://github.com/j-seibel/better-front"
+              target="_blank"
+              rel="noopener noreferrer"
+              className='projectLink'
+            >
+              <h2>Bet Better</h2>
+            </a>
+              <h3>Gage Cammack, Dante Dyches-Chandler, Jake Rance, Joseph Seibel</h3>
             </div>
           </div>
         </SwiperSlide>
