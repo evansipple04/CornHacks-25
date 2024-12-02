@@ -5,6 +5,7 @@ import olson from '../../Images/olsson.webp'
 import sandhills from '../../Images/sandhills.webp'
 import conagra from '../../Images/conagra.webp'
 import spreetail from '../../Images/spreetail.webp'
+import sponsorsChart from '../../Images/sponsorsChart.png'
 import './spawn.css';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
@@ -13,6 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Sponsor = () => {
   const scroller = useRef();
+  const becomeSpon = useRef();
   useEffect(() => {    
     let areas = gsap.utils.toArray('.spawnArea');
     areas.forEach(area => {
@@ -31,12 +33,33 @@ const Sponsor = () => {
         immediateRender: true,
       })
     })
-}, {scope: '.sponsor-container'});
+}, [{scope: '.sponsor-container'}]);
+  useEffect(() => {
+    gsap.fromTo(
+      becomeSpon.current,
+      {x: 600, opacity: 0},
+      {
+        opacity: 1, 
+        x:0,
+        ease: 'power2',
+        scrollTrigger: {
+          trigger: becomeSpon.current,
+          start: 'center 70%',
+          end: 'bottom center',
+          scrub: 2,
+          toggleActions: "play non none reverse",
+        },
+        immediateRender: true,
+    }
+    )
+  }, [])
 
   return (
     <div className="sponsor-background">
     <section className='mainHold'>
+      <div>
       <NavBar/>
+      </div>
       <div className='mainTitle'>
         <label>
           Our 2025 Sponsors
@@ -80,17 +103,21 @@ const Sponsor = () => {
             </div>
           </div>
         </div>
-        <div className='divSpace'/>
-        <div className='becomeSec'>
-          <label>
-            Become a Sponsor!
-            <p>
-              Short paragraph on how
-            </p>
-          </label>
-          
-
+        <div className='smalldivSpace'/>
+        <div className='becomeSec' ref={becomeSpon}>
+          <a href="https://marketplace.unl.edu/default/cornhacks-sponsorship.html" target="_blank" rel="noopener noreferrer">
+            <label>
+              Become a Sponsor!
+            </label>
+          </a>
+          <p>
+            Short paragraph on how
+          </p>
+          <a href='https://marketplace.unl.edu/default/cornhacks-sponsorship.html' target="_blank" rel="noopener noreferrer" className='tierChart'>
+            <img src={sponsorsChart} alt="Our Sponsor tiers"/>
+          </a>
         </div>
+        <div className='smalldivSpace'/>
         </section>
     </section>
     </div>

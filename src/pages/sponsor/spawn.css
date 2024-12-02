@@ -6,11 +6,22 @@
   justify-content: center;
   align-items: center;
 }
+.smalldivSpace {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainHold {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   height: auto;
+  width: 100%;
 }
 
 .mainTitle{
@@ -151,7 +162,22 @@
   width: 100vw;
 }
 
-.becomeSec {
+.tierChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
 
+.becomeSec {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  background-color: #32ca6e;
+  text-align: center;
+  border-radius: 45px;
+  padding: 10px;
 }
 
