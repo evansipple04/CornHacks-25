@@ -14,10 +14,10 @@ socialbar {
   overflow: hidden;
 }
 
-.image-resize-gmail {
+.image-resize-instagram {
   margin: auto;
-  width: 80px;
-  height: 60px;
+  width: 120px;
+  height: 90px;
   aspect-ratio: 2/1;
   overflow: hidden;
 }
