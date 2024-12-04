@@ -58,10 +58,16 @@ const HomePg = () => {
 
         <div className="information-container">
           <h1>Cornhacks 2025</h1>
-          <h2>2100: A Corn Odyssey</h2>
-          <button type="button" className="home-buttons">
-            Register
-          </button>
+          <h2>2100: A Corn Odyssey</h2> 
+            <a
+              href="https://docs.google.com/forms/d/1lFRqsOFMe788vaKo2DP9sigcea3-csNHV5RO8uOkwN0/prefill"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button" className="home-buttons">
+                Register
+              </button>
+            </a>{" "}
           <Link to="/sponsors">
             <button type="button" className="home-buttons">
               Sponsor
