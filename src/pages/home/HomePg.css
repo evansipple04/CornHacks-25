@@ -10,11 +10,12 @@ body, html {
 .floating-image-container {
     position: absolute; /* or fixed */
     top: 100px;
-    left: 40px;
-    margin: 100px auto; /* Adjust to bring it up */
+    left: 0px;
     width: 500px;
-    height: 80vh;
-    overflow: hidden;
+    height: auto;
+    float: left;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .information-container {
@@ -105,7 +106,6 @@ body, html {
 .floating-image-container__img {
     width: 100%;
     height: auto;
-    max-height: 100%;
     object-fit: cover;
     animation: float 3s ease-out infinite;
     transform: rotate(15deg);
@@ -126,7 +126,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #FAF3DD;
     z-index: -1;
@@ -137,9 +137,107 @@ body, html {
     position: fixed; /* Keep it relative to the container */
     top: 20%; /* Adjust top to move it higher */
     left: 90%; /* Center horizontally */
-    width: 100vw; /* Increase the width for better visibility */
+    width: 100%; /* Increase the width for better visibility */
     height: 100vw; /* Keep the aspect ratio */
     background: #FAF3DD;
     z-index: -1; /* Send it behind content */
     transform: translateX(-50%); /* Ensure it is perfectly centered */
+}
+.numbers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+  
+.bigbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    margin: 10px;
+    color: white;
+    font-size: 2em;
+    border-radius: 12px;
+}
+  
+.littlebox {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.labelText {
+    margin-bottom: 10px;
+}
+  
+.participants {
+    background-color: #07c9f8;
+}
+  
+.LOC {
+    background-color: #30cfa6;
+}
+  
+.money {
+    background-color: #edac3c;
+}
+  
+.CompSci {
+    background-color: #eec211;
+}
+  
+.SoftwareEng {
+    background-color: #e0441f;
+}
+  
+.Math {
+    background-color: #f23b3d;
+}
+  
+.CompEng {
+    background-color: #a8bd1b;
+}
+  
+.ElectricalEng {
+    background-color: #35ab43;
+}
+  
+.DataSci {
+    background-color: #d14e75;
+}
+  
+.MechEng {
+    background-color: #D7282B;
+}
+  
+.Cybersecurity {
+    background-color: #6c3ac5;
+}
+  
+.Sociology {
+    background-color: #57a863;
+}
+  
+.Psychology {
+    background-color: #eb98e9;
+}
+  
+.HealthSci {
+    background-color: #1ac2ae;
+}
+  
+.ChemEng {
+    background-color: rgb(236, 157, 120);
+}
+  
+.Economics {
+    background-color: #5175eb;
+}
+  
+.IT {
+    background-color: #a9aeac;
 }

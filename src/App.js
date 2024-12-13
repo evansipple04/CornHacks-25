@@ -1,5 +1,5 @@
 import "./App.css";
-import Countdown from "./components/countdown";
+import Countdown from "./components/countdown/countdown";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {

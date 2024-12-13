@@ -1,11 +1,13 @@
 import React from "react";
-import Countdown from "../../components/countdown";
+import Countdown from "../../components/countdown/countdown";
 import NavBar from "../../features/NavBar";
 import croppedLogo from "../../Images/cropped_raw.webp";
 import "./HomePg.css";
 import ImageGallery from "../../components/imageGallery/ImageGallery";
 import Socialpage from "../../components/socialButtons/socials";
 import { Link } from "react-router-dom";
+import Numbers from "../../components/numbers/numbers";
+import Sponsors24 from "../../components/sponsors/sponsors24";
 
 const HomePg = () => {
   return (
@@ -40,8 +42,8 @@ const HomePg = () => {
           </svg>
         </div>
 
-        <div className="blob2">
-          <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        {/* <div className="blob2">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#24A148">
               <animate
                 attributeName="d"
@@ -54,7 +56,7 @@ const HomePg = () => {
               ></animate>
             </path>
           </svg>
-        </div>
+        </div> */}
 
         <div className="information-container">
           <h1>Cornhacks 2025</h1>
@@ -73,7 +75,86 @@ const HomePg = () => {
           <ImageGallery />
         </div>
       </div>
+      <p className="labels">Participants by Major (Includes Double-Majors):</p>
+      <section className="numbers-container">
+        <div className="littlebox CompSci">
+          <h4 className="labelText">Computer</h4>
+          <Numbers end={67} duration={8} />
+          <h4 className="labelText">Science</h4>
+        </div>
+        <div className="littlebox SoftwareEng">
+          <h4 className="labelText">Software</h4>
+          <Numbers end={17} duration={8} />
+          <h4 className="labelText">Engineering</h4>
+        </div>
+        <div className="littlebox Math">
+          <h4 className="labelText">Math</h4>
+          <Numbers end={10} duration={8} />
+          <h4 style={{ color: "#f23b3d"}}> Eng</h4>
+        </div>
+        <div className="littlebox CompEng">
+          <h4 className="labelText">Computer</h4>
+          <Numbers end={6} duration={8} />
+          <h4 className="labelText">Engineering</h4>
+        </div>
+        <div className="littlebox ElectricalEng">
+          <h4 className="labelText">Electrical</h4>
+          <Numbers end={5} duration={8} />
+          <h4 className="labelText">Engineering</h4>
+        </div>
+        <div className="littlebox DataSci">
+          <h4 className="labelText">Data</h4>
+          <Numbers end={3} duration={8} />
+          <h4 className="labelText">Science</h4>
+        </div>
+        <div className="littlebox IT">
+          <h4 className="labelText">Information</h4>
+          <Numbers end={3} duration={8} />
+          <h4 className="labelText">Technology</h4>
+        </div>
+      </section>
+      <section className="numbers-container">
+        <div className="littlebox MechEng">
+          <h4 className="labelText">Mechanical</h4>
+          <Numbers end={3} duration={8} />
+          <h4 className="labelText">Engineering</h4>
+        </div>
+        <div className="littlebox Cybersecurity">
+          <h4 className="labelText">Cybersecurity</h4>
+          <Numbers end={2} duration={8} />
+          <h4 style={{ color: "#6c3ac5"}}> Eng</h4>
+        </div>
+        <div className="littlebox Sociology">
+          <h4 className="labelText">Sociology</h4>
+          <Numbers end={1} duration={8} />
+          <h4 style={{ color: "#57a863"}}> Eng</h4>
+        </div>
+        <div className="littlebox Psychology">
+          <h4 className="labelText">Psychology</h4>
+          <Numbers end={1} duration={8} />
+          <h4 style={{ color: "#eb98e9"}}> Eng</h4>
+        </div>
+        <div className="littlebox HealthSci">
+          <h4 className="labelText">Health</h4>
+          <Numbers end={1} duration={8} />
+          <h4 className="labelText">Science</h4>
+        </div>
+        <div className="littlebox ChemEng">
+          <h4 className="labelText">Chemical</h4>
+          <Numbers end={1} duration={8} />
+          <h4 className="labelText">Engineering</h4>
+        </div>
+        <div className="littlebox Economics">
+          <h4 className="labelText">Economics</h4>
+          <Numbers end={1} duration={8} />
+          <h4 style={{ color: "#5175eb"}}> Eng</h4>
+        </div>
+      </section>
 
+      <div>
+        <Sponsors24 />
+      </div>
+      
       <div>
         <Socialpage />
       </div>
