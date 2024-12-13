@@ -1,6 +1,4 @@
 
-
-
 .divSpace {
   height: 22vh;
   width: 100vw;
@@ -8,11 +6,33 @@
   justify-content: center;
   align-items: center;
 }
+.smalldivSpace {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainHold {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   height: auto;
+  width: 100%;
+}
+
+.mainTitle{
+  flex-direction: row;
+  display: flex;
+  margin: 0px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 350px;
+  font-size: 56px;
 }
 
 .mainHold::-webkit-scrollbar{
@@ -23,12 +43,16 @@
 
 /* App.css */
 .sponsor-container {
+  padding: 30px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column; /* Align children (sponsor groups) vertically */
   justify-content: center;
   gap: 15vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow-y: auto;
   align-items: center;
-  margin-bottom: 80px;
   height: auto; /* Full height of the viewport */
 }
 
@@ -48,7 +72,7 @@
   align-items: center;
   width: 75vw;
   max-height: fit-content;
-  gap: 150px; /* Space between images */
+  gap: 20px; /* Space between images */
 }
 
 .title {
@@ -57,8 +81,12 @@
   max-width: 75vw;
   position: relative;
   margin: 0px auto;
-  padding: 40px;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  align-items: center;
   text-align: center;
+  justify-content: center;
   z-index: 10;
 }
 
@@ -69,18 +97,19 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 75vw;
-  height: auto;
+  height: fit-content;
+  max-height: 30vh;
 }
 
 
 .imagePlatinum {
-  max-width: 650px; /* Adjust the size as needed */
+  max-width: 500px; /* Adjust the size as needed */
   height: auto;
 }
 
 .imageGold {
   display: inline-block;
-  max-width: 500px; /* Adjust the size as needed */
+  max-width: 450px; /* Adjust the size as needed */
   height: auto;
 }
 
@@ -125,12 +154,29 @@
 }
 .sponsor-background {
   background-color: #fdf5e6; /* pastel yellow */
-  background: url('../../Images/Background2.png'); /* Replace with your image path */ 
   background-repeat: repeat;
   background-size: cover; /* Adjusts to cover the entire screen */
   background-position: center;
   height: 100vh; /* Full viewport height */
   width: 100vw;
-
-
 }
+
+.tierChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.becomeSec {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  background-color: #32ca6e;
+  text-align: center;
+  border-radius: 45px;
+  padding: 10px;
+}
+

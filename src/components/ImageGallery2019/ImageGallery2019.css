@@ -1,0 +1,121 @@
+.gallery-container2019 {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1250px;
+    text-align: center;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .swiper-container2019 {
+    width: 100%;
+    max-width: fit-content;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .swiper-slide2019 {
+    background-color: #FAF3DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .swiper-slide-active2019 {
+    opacity: 1;
+    z-index: 3;
+    transform: scale(1, 1);
+  }
+  
+  .swiper-slide-next2019 {
+    opacity: 0.85;
+    z-index: 2;
+    right: 100px;
+  }
+  
+  .swiper-slide-prev2019 {
+    opacity: 0.85;
+    z-index: 2;
+    left: 150px;
+  }
+  
+  .slide-content2019 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .slide-img2019 {
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  
+  .slide-textbox2019 {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  .slider-arrow2019 {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: none;
+  }
+  
+  .swiper-button-next {
+    transform: rotate(90deg) scale(1.4);
+  }
+  
+  .swiper-button-prev {
+    transform: rotate(-90deg) scale(1.4);
+  }
+  
+  .swiper-button-prev:hover {
+    transform: rotate(-90deg) scale(1.6);
+  }
+  
+  .swiper-button-next:hover {
+    transform: rotate(90deg) scale(1.6);
+  }

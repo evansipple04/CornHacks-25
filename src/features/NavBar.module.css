@@ -3,7 +3,7 @@ nav {
   justify-content: center; /* Centers the navbar horizontally */
   justify-items: center;
   animation: gradientAnimation 5s ease infinite;
-  background: linear-gradient(90deg, #F4D35E, #8FB339);
+  background: linear-gradient(90deg, #036135, #036135);
   background-size: 200% 200%;
   height: 100px;
 }

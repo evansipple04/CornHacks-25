@@ -7,6 +7,14 @@ body, html {
     overflow-y: auto;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden;
+}
+
 .floating-image-container {
     position: absolute; /* or fixed */
     top: 100px;
@@ -27,15 +35,21 @@ body, html {
 }
 
 .information-container h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
     font-size: 4em; /* Increase size for H1 */
     font-weight: bold;
     margin-bottom: 10px;
+    text-shadow: 2px 3px 15px rgba(0,0,0,.15);
 }
 
 .information-container h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
     font-size: 4rem; /* Increase size for H2 */
     font-weight: normal;
     margin-bottom: 30px;
+    text-shadow: 2px 3px 15px rgba(0,0,0,.15);
 }
 
 .home-buttons {
@@ -120,35 +134,6 @@ body, html {
         transform: translateY(-20px) rotate(15deg);
     }
 }
-
-.blob {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
-    background: #FAF3DD;
-    z-index: -1;
-    overflow: hidden;
-}
-
-.blob2 {
-    position: fixed; /* Keep it relative to the container */
-    top: 20%; /* Adjust top to move it higher */
-    left: 90%; /* Center horizontally */
-    width: 100%; /* Increase the width for better visibility */
-    height: 100vw; /* Keep the aspect ratio */
-    background: #FAF3DD;
-    z-index: -1; /* Send it behind content */
-    transform: translateX(-50%); /* Ensure it is perfectly centered */
-}
-.numbers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
   
 .bigbox {
     display: flex;
@@ -172,72 +157,4 @@ body, html {
   
 .labelText {
     margin-bottom: 10px;
-}
-  
-.participants {
-    background-color: #07c9f8;
-}
-  
-.LOC {
-    background-color: #30cfa6;
-}
-  
-.money {
-    background-color: #edac3c;
-}
-  
-.CompSci {
-    background-color: #eec211;
-}
-  
-.SoftwareEng {
-    background-color: #e0441f;
-}
-  
-.Math {
-    background-color: #f23b3d;
-}
-  
-.CompEng {
-    background-color: #a8bd1b;
-}
-  
-.ElectricalEng {
-    background-color: #35ab43;
-}
-  
-.DataSci {
-    background-color: #d14e75;
-}
-  
-.MechEng {
-    background-color: #D7282B;
-}
-  
-.Cybersecurity {
-    background-color: #6c3ac5;
-}
-  
-.Sociology {
-    background-color: #57a863;
-}
-  
-.Psychology {
-    background-color: #eb98e9;
-}
-  
-.HealthSci {
-    background-color: #1ac2ae;
-}
-  
-.ChemEng {
-    background-color: rgb(236, 157, 120);
-}
-  
-.Economics {
-    background-color: #5175eb;
-}
-  
-.IT {
-    background-color: #a9aeac;
 }

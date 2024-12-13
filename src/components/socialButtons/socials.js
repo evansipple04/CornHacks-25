@@ -1,7 +1,6 @@
 import React from "react";
-import insta from "../../Images/insta.webp";
-import gmail from "../../Images/gmail.webp"
-import outlook from "../../Graphics/outlook.svg"
+import insta from "../../Images/instagram-black.webp";
+import emailimage from "../../Images/email-icon-121.webp"
 import './socials.css'
 
 /* 
@@ -17,15 +16,11 @@ var Instagramlink = () => {
   const instagramURL = `https://www.instagram.com/${recipient}/`;
   window.open(instagramURL, '_blank');
 }
-var Gmaillink = () => {
+
+var Emaillink = () => {
   const recipient = 'cornhacks@unl.edu';
-  const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}`;
-  window.open(gmailURL, '_blank');
-}
-var Outlooklink = () => {
-  const recipient = 'cornhacks@unl.edu';
-  const outlookURL = `https://outlook.office.com/mail/deeplink/compose?to=${recipient}`;
-  window.open(outlookURL, '_blank');
+  const EmailURL = `mailto:${recipient}`;
+  window.open(EmailURL, '_blank');
 }
 
 const Socialpage = () => {
@@ -33,7 +28,7 @@ const Socialpage = () => {
   <socialbar>
 
     <button onClick={Instagramlink} className="invis-button">
-      <img src={insta} alt={"Couldn't Load"} className="image-resize">
+      <img src={insta} alt={"Couldn't Load"} className="image-resize-instagram">
       </img>
     </button>
 
@@ -45,28 +40,15 @@ const Socialpage = () => {
       @unl_cornhacks
     </a>
 
-    <button onClick={Outlooklink} className="invis-button">
-      <img src={outlook} alt={"Couldn't Load"} className="image-resize">
+    <button onClick={Emaillink} className="invis-button">
+      <img src={emailimage} alt={"Couldn't Load"} className="image-resize">
       </img>
     </button>
 
     <a
-    href="https://outlook.office.com/mail/deeplink/compose?to=cornhacks@unl.edu" 
+    href="mailto:cornhacks@unl.edu" 
     target="_blank" 
     rel="noreferrer"
-    className="font-resize">
-      cornhacks@unl.edu
-    </a>
-
-    <button onClick={Gmaillink} className="invis-button">
-      <img src={gmail} alt={"Couldn't Load"} className="image-resize-gmail">
-      </img>
-    </button>
-
-    <a 
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=cornhacks@unl.edu" 
-    target="_blank" 
-    rel="noreferrer" 
     className="font-resize">
       cornhacks@unl.edu
     </a>

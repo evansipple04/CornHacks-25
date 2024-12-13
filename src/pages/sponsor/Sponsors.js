@@ -5,18 +5,21 @@ import olson from '../../Images/olsson.webp'
 import sandhills from '../../Images/sandhills.webp'
 import conagra from '../../Images/conagra.webp'
 import spreetail from '../../Images/spreetail.webp'
+import sponsorsChart from '../../Images/sponsorsChart.png'
 import './spawn.css';
 import gsap from 'gsap';
 import { Link } from 'react-router-dom';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Blobs from "../../components/blobs/blobs";
 gsap.registerPlugin(ScrollTrigger);
 
 const Sponsor = () => {
   const scroller = useRef();
+  const becomeSpon = useRef();
   useEffect(() => {    
     let areas = gsap.utils.toArray('.spawnArea');
     areas.forEach(area => {
-      gsap.fromTo(area,{x: -600, opacity: 0}, {
+      gsap.fromTo(area,{x: -550, opacity: 0}, {
         opacity: 1,
         x: 0,
         ease: "power3",
@@ -25,24 +28,40 @@ const Sponsor = () => {
           start:'center 50%',
           end: '+=100px',
           //pin: true,
-          scrub: 3,
-          toggleActions: "play none none",
+          scrub: 2,
+          toggleActions: "play none none reverse",
         },
+        immediateRender: true,
       })
     })
-}, {scope: '.sponsor-container'});
+}, [{scope: '.sponsor-container'}]);
+  useEffect(() => {
+    gsap.fromTo(
+      becomeSpon.current,
+      {x: 600, opacity: 0},
+      {
+        opacity: 1, 
+        x:0,
+        ease: 'power2',
+        scrollTrigger: {
+          trigger: becomeSpon.current,
+          start: 'center 70%',
+          end: 'bottom center',
+          scrub: 2,
+          toggleActions: "play non none reverse",
+        },
+        immediateRender: true,
+    }
+    )
+  }, [])
 
   return (
-    <div className="sponsor-background">
-
-    
-    <section className='mainHold'>
+    <>
+    <Blobs />
+    <div>
       <NavBar/>
-      <div className='title'>
-        <label>
-            Our 2025 Sponsors
-        </label>
-      </div>
+    </div>
+    <section className='mainHold'>
       <div className='divSpace'/>
       <section className='sponsor-container' ref={scroller}>
         <div className='spawnArea'>
@@ -57,9 +76,6 @@ const Sponsor = () => {
               </Link>
               <Link to={"https://www.spreetail.com/"}>
                 <img src={spreetail} alt='spreetail' className='imagePlatinum' />
-              </Link>
-              <Link to={"https://www.olsson.com/"}>
-                <img src={olson} alt='olson' className='imagePlatinum' />
               </Link>
           </div> 
             </div>
@@ -84,10 +100,24 @@ const Sponsor = () => {
             </div>
           </div>
         </div>
-        <div className='divSpace'/>
+        <div className='smalldivSpace'/>
+        <div className='becomeSec' ref={becomeSpon}>
+          <a href="https://marketplace.unl.edu/default/cornhacks-sponsorship.html" target="_blank" rel="noopener noreferrer">
+            <label>
+              Become a Sponsor!
+            </label>
+          </a>
+          <p>
+            Short paragraph on how
+          </p>
+          <a href='https://marketplace.unl.edu/default/cornhacks-sponsorship.html' target="_blank" rel="noopener noreferrer" className='tierChart'>
+            <img src={sponsorsChart} alt="Our Sponsor tiers"/>
+          </a>
+        </div>
+        <div className='smalldivSpace'/>
         </section>
     </section>
-    </div>
+    </>
   )
 }
 
